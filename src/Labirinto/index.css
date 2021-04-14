@@ -1,0 +1,186 @@
+.sala {
+  width: 300px;
+  height: 250px;
+  background: gray;
+  margin: 20px auto;
+  border-top: 100px solid #e8e8e8;
+  border-right: 120px solid #b3b1b1;
+  border-left: 120px solid #d6d6d6;
+  border-bottom: 130px solid #f3e4e4;
+  position: relative;
+}
+
+.porta {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.porta-esquerda {
+  width: 80px;
+  height: 120px;
+  background-color: brown;
+  position: absolute;
+  left: -94px;
+  bottom: -26px;
+  transform: rotate(311deg) skew(311deg);
+}
+
+.porta-direita {
+  width: 80px;
+  height: 120px;
+  background-color: brown;
+  position: absolute;
+  right: -90px;
+  bottom: -26px;
+  transform: rotate(47deg) skew(47deg);
+}
+
+.porta-cima {
+  width: 80px;
+  height: 150px;
+  background-color: rgb(110, 12, 12);
+  position: absolute;
+  left: 108px;
+  bottom: 0px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  border: none;
+}
+
+.btn-voltar {
+  background: green;
+}
+
+.btn-mapa {
+  background: blue;
+}
+
+.btn:disabled {
+  background: grey;
+}
+
+.jogo-container {
+  display: flex;
+  padding: 20px;
+}
+
+.minimapa {
+  padding: 20px;
+}
+
+.bloco {
+  width: 25px;
+  height: 25px;
+  background: lightgray;
+  display: inline-block;
+  position: relative;
+}
+
+.personagem {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.direita {
+  border-left: 10px solid red;
+  top: 2px;
+  right: 0px;
+}
+
+.esquerda {
+  border-right: 10px solid red;
+  top: 0px;
+  right: 10px;
+}
+
+.baixo {
+  border-top: 10px solid red;
+  top: 7px;
+  right: 4px;
+}
+
+.cima {
+  border-bottom: 10px solid red;
+  top: 0px;
+  right: 3px;
+}
+.card-start {
+  margin: 0 auto;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(255 0 0);
+  transition: 0.3s;
+  width: 80%;
+  background: linear-gradient(red, black);
+}
+
+.card-nivel {
+  box-shadow: 0 4px 8px 0 rgb(255 0 0);
+  transition: 0.3s;
+  width: 50%;
+  cursor: pointer;
+  background: red;
+  margin: 20px;
+  padding: 10px;
+}
+
+.card-nivel-voltar {
+  box-shadow: 0 4px 8px 0 rgb(255 0 0);
+  transition: 0.3s;
+  width: 80%;
+  cursor: pointer;
+  background: red;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.card-nivel-selecionado {
+  box-shadow: 0 4px 8px 0 rgb(255 0 0);
+  transition: 0.3s;
+  width: 80%;
+  background: transparent;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.button-start {
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-start:disabled {
+  background-color: #00000096;
+  cursor: no-drop;
+}
+
+.button-start:hover {
+  background: #ff00009e;
+}
+
+.align-card-nivel {
+  display: flex;
+  padding-bottom: 20px;
+}
